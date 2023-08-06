@@ -16,15 +16,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        btnchat.setTitle("", for: .normal)
+        btnchat.setTitle("Click to chatbot", for: .normal)
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(clickChatbot(_:)))
-        chatview.isUserInteractionEnabled = true
-        chatview.addGestureRecognizer(tap)
+        let downArrowViewGesture = UITapGestureRecognizer(target: self, action:  #selector(self.chatbotClicekd))
+        downArrowViewGesture.numberOfTapsRequired = 1
+        self.btnchat.addGestureRecognizer(downArrowViewGesture)
+        self.btnchat.isUserInteractionEnabled = true
         
     }
 
-    @objc func clickChatbot(_ sender: UITapGestureRecognizer) {
+    @objc func chatbotClicekd(sender : UITapGestureRecognizer) {
+        let chatbot = ChatbotVC()
+        self.present(chatbot, animated:true, completion:nil)
         
     }
     

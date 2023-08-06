@@ -16,8 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="cSd-CD-CJ5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cSd-CD-CJ5">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="0.93255865530293891" green="0.93531669700009967" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhC-m3-MVw">
                                 <rect key="frame" x="30" y="501" width="333" height="50"/>
@@ -56,7 +57,7 @@
                             <constraint firstItem="cSd-CD-CJ5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Aj1-Ka-J6o"/>
                             <constraint firstItem="cSd-CD-CJ5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Au0-sQ-OD9"/>
                             <constraint firstItem="bhC-m3-MVw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="QeX-7u-DDz"/>
-                            <constraint firstItem="bhC-m3-MVw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="hBA-vC-NUX"/>
+                            <constraint firstItem="bhC-m3-MVw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="250" id="hBA-vC-NUX"/>
                             <constraint firstItem="cSd-CD-CJ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tLw-79-v9T"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bhC-m3-MVw" secondAttribute="trailing" constant="30" id="yj7-bU-goR"/>
                             <constraint firstItem="cSd-CD-CJ5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="z6G-o3-aE8"/>
@@ -73,7 +74,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="beach" width="800" height="711"/>
+        <image name="background" width="1200" height="1200"/>
         <image name="chatbot" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
